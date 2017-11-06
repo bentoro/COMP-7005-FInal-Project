@@ -23,13 +23,13 @@ int main (int argc, char *argv[]) {
     string msg;
     int n, read;
 
-      /*if(argc != 2){
+      if(argc != 2){
         printf("Error : host [port]");
         exit(1);
       } else {
         host = argv[0];
         port = atoi(argv[1]);
-      }*/
+      }
 
 
     //create command socket, returns socket file descriptor(int)

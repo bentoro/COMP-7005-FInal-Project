@@ -17,12 +17,12 @@ int main (int argc, char *argv[]) {
   char *bf, buf[BUFLEN];
   int n, read;
 
-  /*if(argc != 0){
+  if(argc != 0){
     printf("Error : [port]");
     exit(1);
   } else {
     port = atoi(argv[0]);
-  }*/
+  }
   if ((cmdsocket = socket(AF_INET, SOCK_STREAM,0)) == -1){
     printf("Error creating socket");
     exit(1);
