@@ -69,7 +69,7 @@ int main (int argc, char *argv[]) {
 
     listen(datasocket,5);
     client_len = sizeof(client);
-    if ((da = accept(cmdsocket,(struct sockaddr *) &client, &client_len)) == -1){
+    if ((da = accept(datasocket,(struct sockaddr *) &client, &client_len)) == -1){
       printf("Error accepting client");
       exit(1);
     } else {
